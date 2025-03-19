@@ -105,6 +105,3 @@ def import_dataset(path):
             if(valid):
                 teamlist[team_name] = team_stat(adj_tempo, adjoe, adjde, adjem )
         return teamlist
-
-if __name__ == "__main__":
-    import_dataset(r'C:\Users\Bryan\Downloads\summary25.csv')

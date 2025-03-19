@@ -1,7 +1,9 @@
 import database
 import math
 import random
-team_dict = database.import_dataset(r'C:\Users\Bryan\Downloads\summary25.csv')
+
+team_dict = database.import_dataset(r'summary25.csv')
+
 def odds_of_winning(team1, team2):
     '''Calculate the odds of team1 winning against team2'''
     points_diff = ((team_dict[team1.name].adj_tempo + team_dict[team2.name].adj_tempo) * (team_dict[team1.name].adj_em - team_dict[team2.name].adj_em))/200
