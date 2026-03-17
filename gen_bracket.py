@@ -2,7 +2,7 @@ import database
 import math
 import random
 
-team_dict = database.import_dataset(r'summary25.csv')
+team_dict = database.import_dataset(r'summary26.csv')
 
 def odds_of_winning(team1, team2):
     '''Calculate the odds of team1 winning against team2'''
@@ -71,7 +71,7 @@ class Bracket:
             print(f"Round {i+1}:")
             print("--------------------------------")
             if(i == len(self.rounds) - 1):
-                print(f"{round[0].winner.name} won it all!")
+                print(f"{round[0].winner.name} won it all! {"(Roll MF Clones!)"if round[0].winner.name == "Iowa St." else "" }")
                 print()
             else:
                 for matchup in round:
